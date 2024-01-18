@@ -3,6 +3,7 @@ from fastai.vision.all import *
 from fastai.learner import CastToTensor
 import plotly.express as px
 import pathlib
+import platform
 
 plt = platform.system()
 if plt=='Linux':pathlib.WindowsPath = pathlib.PosixPatx
