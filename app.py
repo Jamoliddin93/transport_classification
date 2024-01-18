@@ -3,9 +3,9 @@ from fastai.vision.all import *
 from fastai.learner import CastToTensor
 import plotly.express as px
 import pathlib
-temp = pathlib.PosixPath
-pathlib.PosixPath = pathlib.WindowsPath
 
+plt = platform.system()
+if plt=='Linux':pathlib.WindowsPath = pathlib.PosixPatx
 
 st.title('Transportni klassifikatsiya qiluvchi model')
 
